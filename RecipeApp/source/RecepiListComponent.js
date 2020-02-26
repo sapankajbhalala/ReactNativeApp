@@ -69,7 +69,7 @@ import { connect } from 'react-redux'
                     </View>
                     <View style={styles.textContentView}>
                         <Text style={styles.recepieName}>{item.name} </Text>
-                        <Text style={styles.recepieMadebyName}>By : {item.firstName + ' ' + item.lastName}</Text>
+                        <Text style={styles.recepieMadebyName}>🥪 👨‍🍳  {item.firstName + ' ' + item.lastName}</Text>
                     </View>
                 </View>
             </TouchableWithoutFeedback>
@@ -143,7 +143,7 @@ const styles = StyleSheet.create({
         margin: 8,
         height: 200,
         width: '96%',
-        backgroundColor: '#f7f8fa',// 'rgba(52, 52, 52, 0.8)'
+        backgroundColor: '#f7f8fa',
         padding: 10,
         paddingLeft: 12,
         flexDirection: 'column',
@@ -187,7 +187,6 @@ const styles = StyleSheet.create({
         color: 'blue',
         fontFamily: 'TimesNewRomanPSMT',
         fontSize: 18,
-        // backgroundColor: 'green'
     }
 });
 

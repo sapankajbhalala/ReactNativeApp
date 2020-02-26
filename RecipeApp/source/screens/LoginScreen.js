@@ -38,18 +38,8 @@ class LoginScreen extends Component {
 
                 this.setState({ isLoading: false })
             }).then((responseJSON) => {
-                // console.log(responseJSON);
-                // Alert.alert('Success', 'Logged in', [
-                //     {
-                //         text: 'Ok',
-                //         style: 'destructive',
-                //         onPress: () => {
-                          this.props.token(responseJSON.token)
-                          this.props.navigation.navigate('RecipeList')
-                //         }
-                //     },
-                // ])
-
+                this.props.token(responseJSON.token)
+                this.props.navigation.navigate('detailNavigation')
                 this.setState({ isLoading: false })
             }).catch((error) => {
                 console.log('====================================');
