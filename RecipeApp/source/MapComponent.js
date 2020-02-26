@@ -2,16 +2,11 @@ import React, { Component } from 'react'
 import { View } from 'react-native'
 import MapView, { Marker, Polyline } from 'react-native-maps'
 import * as Permission from 'expo-permissions'
-// import {request, PERMISSIONS} from 'react-native-permissions';
 
 export default class MapComponent extends Component {
     constructor() {
         super()
         Permission.askAsync(Permission.LOCATION)
-        // request(PERMISSIONS.IOS.LOCATION_WHEN_IN_USE).then(result => {
-        //     // …
-        //   });
-        // navigator.geolocation.watchPosition(this.onSuccess, this.onError)
     }
 
     onSuccess = (position) => {

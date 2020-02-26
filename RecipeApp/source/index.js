@@ -7,6 +7,7 @@ import {createBottomTabNavigator } from 'react-navigation-tabs';
 import LoginScreen from './screens/LoginScreen';
 import RecepiListComponent from './RecepiListComponent';
 import MapComponent from './MapComponent';
+import ProfileScreen from './ProfileScreen';
 
 const detailNavigation = createBottomTabNavigator(
   {
@@ -24,7 +25,7 @@ const detailNavigation = createBottomTabNavigator(
     ),
     title: "Map" }
   },
-    'Profile': { 'screen': RecepiListComponent 
+    'Profile': { 'screen': ProfileScreen 
     ,
     navigationOptions: { 
       tabBarIcon: ({ tintColor }) => (
