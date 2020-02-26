@@ -34,7 +34,7 @@ export default class MapComponent extends Component {
 
                 <Polyline
                     strokeWidth={5}
-                    strokeColor='blue'
+                    strokeColor='gray'
                     coordinates={
                         [
                             {
@@ -43,15 +43,15 @@ export default class MapComponent extends Component {
                             },
                             {
                                 latitude: 23.025802,
-                                longitude: 72.502587
+                                longitude: 72.512587
                             },
                             {
                                 latitude: 23.027712,
-                                longitude: 72.502839
+                                longitude: 72.522839
                             },
                             {
                                 latitude: 23.027387,
-                                longitude: 72.507136
+                                longitude: 72.497136
                             }
                         ]
                     }

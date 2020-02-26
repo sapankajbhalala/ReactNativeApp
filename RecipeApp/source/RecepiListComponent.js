@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { StyleSheet, Text, View, SafeAreaView, Alert, FlatList, RefreshControl, ActivityIndicator, ImageBackground, Image, Button } from 'react-native'
 import { TouchableWithoutFeedback } from 'react-native-gesture-handler'
 import { connect } from 'react-redux'
-
+import ActionButton from 'react-native-action-button'
 
  class RecepiListComponent extends Component {
 
@@ -102,6 +102,11 @@ import { connect } from 'react-redux'
                                 />
                             }
                         />}
+                        <ActionButton buttonColor="rgba(231,76,60,1)">
+                            <ActionButton.Item buttonColor='#9b59b6' title="New Task" onPress={() => console.log("notes tapped!")}>
+                                
+                            </ActionButton.Item>
+                        </ActionButton>
                 </SafeAreaView>
             </View>
         );
